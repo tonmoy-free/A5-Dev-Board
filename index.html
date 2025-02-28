@@ -37,7 +37,109 @@
                       }
         </style>
     </head>
-    <body class="poppins-font">
+    <body id="body" class="poppins-font bg-gray-500 p-6">
+        <header class="container mx-auto p-6 bg-white rounded-2xl">
+            <!-- <div class="flex justify-between items-center"></div> -->
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                <div class="flex justify-center  items-center ">
+                    <!-- img -->
+                    <div>
+                        <img class="w-10 h-10 " src="./assets/logo.png" alt>
+                    </div>
+                    <!-- logo tittle -->
+                    <div>
+                        <h1 class="pl-2 text-2xl">Dev<span
+                                class="font-bold">Board</span></h1>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="flex justify-around items-center">
+                    <!-- task count complete -->
+                    <div>
+                        <div class="form-control flex ">
+                            <label class="label cursor-pointer ">
+                                <img class="w-6 h-6" src="./assets/checkbox.png"
+                                    alt>
+                                <p
+                                    class="text-2xl font-bold text-black pl-1 pt-1">23</p>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- background color change button -->
+                    <div>
+                        <button id="bg-color-btn"
+                            class="cursor-pointer pl-12 mt-[6px]">
+                            <img src="./assets/theme-btn.png" alt>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
+        </header>
+        <main class="container mx-auto flex mt-5 gap-5">
+            <!-- left side section -->
+            <section class="w-9/12 h-96 bg-white rounded-2xl ">
+                <!-- title card -->
+                <div class="flex justify-around border-b-2 border-gray-300 border-dashed p-6">
+                    <!-- task assigned  -->
+                    <div class="flex gap-6 justify-center items-center bg-[#F4F7FF] rounded-2xl p-8">
+                        <div>
+                            <div class="relative w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                                <img class="absolute flex items-center justify-center" src="./assets/checkbox.png" alt>
+                            </div>  
+                        </div>
+                        <div>
+                            <p class="text-base font-medium">Task Assigned</p>
+                            <p class="text-3xl font-bold text-[#00303C]">5</p>
+                        </div>
+                    </div>
+                    <!-- task banner -->
+                    <div class="flex justify-start items-center w-[480px] h-36 bg-gradient-to-r from-[rgba(55,82,253,1.00)] to-[rgba(100,150,253,1.00)] rounded-2xl">
+                        <div>
+                            <img class="pl-10" src="./assets/board.png" alt>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-medium text-white pl-6">Discover Something<br> New Today!</p>
+                        </div>
+                    </div>
+                    <!-- time -->
+                    <div class="flex justify-start items-center  bg-[#F4F7FF] rounded-2xl p-8">
+                        <div>
+                            <div class="relative w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                                <img class="absolute flex items-center justify-center" src="./assets/calender.png" alt>
+                            </div> 
+                        </div>
+                        <div>
+                            <p class="text-xl pl-6">Fri ,<br><span class="font-bold text-[#00303C]">Feb 28 2025</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- task card -->
+                <div>
+
+                </div>
+            </section>
+
+            <!-- right side section -->
+            <section class="w-3/12 h-96 bg-white rounded-2xl">
+                <div class="flex justify-center items-center pt-7">
+                    <img src="./assets/activity.png" alt>
+                    <p class="text-2xl font-normal pl-5">Activity Log</p>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button
+                        class="btn btn-primary rounded-md text-xl font-medium">Clear
+                        History</button>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+
+        <script src="./js/bgColorChange.js"></script>
     </body>
 </html>
