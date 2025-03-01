@@ -27,6 +27,17 @@ const completeButtons = document.querySelectorAll('.complete-button');
 
         event.target.classList.add('disabled');
         event.target.disabled = true;
+
+
+        const container= document.getElementById("activity-log");
+
+        const paragraph = document.createElement("p");
+  //      paragraph.classList.add("bg-blue-500");
+        
+        paragraph.innerHTML = `
+        <p class="text-base p-6 bg-orange-300 rounded-md">12345</p>
+        `
+        container.appendChild(paragraph);
       });
     }
 
