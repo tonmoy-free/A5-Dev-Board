@@ -37,7 +37,7 @@
                       }
         </style>
     </head>
-    <body id="body" class="poppins-font bg-gray-500 p-6">
+    <body id="body" class="poppins-font bg-[#F4F7FF]  p-6">
         <header class="container mx-auto p-5 bg-white rounded-2xl">
             <!-- <div class="flex justify-between items-center"></div> -->
             <div class="flex justify-between items-center">
@@ -55,46 +55,84 @@
                 </div>
                 <!-- right side -->
                 <div class="flex justify-around items-center">
-                        <button id="back-todesk-btn"
-                            class="cursor-pointer btn btn-primary rounded-lg text-xl pt-7 pb-7 pl-6 pr-6">
-                            Back to Desk
-                        </button>
+                    <button id="back-todesk-btn"
+                        class="cursor-pointer btn btn-primary rounded-lg text-xl pt-7 pb-7 pl-6 pr-6">
+                        Back to Desk
+                    </button>
                 </div>
             </div>
 
         </header>
-        <main class="container mx-auto  mt-4 space-y-6" >
-           <h1 class="text-3xl font-bold text-center mb-6">Blogs</h1>
-           <!-- question 1 -->
-           <div class="bg-white rounded-md">
-              <h3 class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-1: What are the difference ways to select an elements in the DOM?</h3>
-              <p class="text-gray-500 text-xl p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eligendi aperiam dolor atque sint tempora ullam explicabo aliquam est illum omnis,
-              </p>
-           </div>
-           <!-- question 2 -->
-           <div class="bg-white rounded-md">
-            <h3 class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-2: What is the difference between innerHTML,innerText,and textContent ?</h3>
-            <p class="text-gray-500 text-xl p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eligendi aperiam dolor atque sint tempora ullam explicabo aliquam est illum omnis,
-            </p>
-         </div>
-         <!-- question 3 -->
-         <div class="bg-white rounded-md">
-            <h3 class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-3: What is event Deligation in the DOM?</h3>
-            <p class="text-gray-500 text-xl p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eligendi aperiam dolor atque sint tempora ullam explicabo aliquam est illum omnis,
-            </p>
-         </div>
-         <!-- question 4 -->
-         <div class="bg-white rounded-md">
-            <h3 class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-4: What is event bubbling in the DOM?</h3>
-            <p class="text-gray-500 text-xl p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eligendi aperiam dolor atque sint tempora ullam explicabo aliquam est illum omnis,
-            </p>
-         </div>
-         <!-- question 5 -->
-         <div class="bg-white rounded-md">
-            <h3 class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-5: How do you create,add,remove elements using javascript?</h3>
-            <p class="text-gray-500 text-xl p-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eligendi aperiam dolor atque sint tempora ullam explicabo aliquam est illum omnis,
-            </p>
-         </div>
+        <main class="container mx-auto  mt-4 space-y-6">
+            <h1 class="text-3xl font-bold text-center mb-6">Blogs</h1>
+            <!-- question 1 -->
+            <div class="bg-white rounded-md">
+                <h3
+                    class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-1:
+                    What are the difference ways to select an elements in the
+                    DOM?</h3>
+                <p class="text-gray-500 text-xl p-6">To select elements in the
+                    DOM there are mainly 4 ways. Like getElementById to select
+                    by ID, getElementsByClassName to select by class name,
+                    getElementsByTagName to select by tag name, and CSS
+                    Selectors like querySelector and querySelectorAll.
+                </p>
+            </div>
+            <!-- question 2 -->
+            <div class="bg-white rounded-md">
+                <h3
+                    class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-2:
+                    What is the difference between innerHTML,innerText,and
+                    textContent ?</h3>
+                <p class="text-gray-500 text-xl p-6">innerHTML gets or sets the
+                    HTML markup contained within an element. This includes both
+                    text and HTML tags.
+                    <br>
+                    innerText gets or sets the visible text content of an
+                    element.
+                    <br>
+                    textContent gets or sets the text content of an element, It
+                    also returns all text, whether it's hidden on screen or not.
+                    ,
+                </p>
+            </div>
+            <!-- question 3 -->
+            <div class="bg-white rounded-md">
+                <h3
+                    class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-3:
+                    What is event Deligation in the DOM?</h3>
+                <p class="text-gray-500 text-xl p-6">Event Delegation is a
+                    technique in JavaScript where attach a single event handler
+                    to a parent element to listen for events that happen on its
+                    child elements. Instead of adding event listeners to each
+                    individual child element, delegate the event handling to the
+                    parent.
+                </p>
+            </div>
+            <!-- question 4 -->
+            <div class="bg-white rounded-md">
+                <h3
+                    class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-4:
+                    What is event bubbling in the DOM?</h3>
+                <p class="text-gray-500 text-xl p-6">Event bubbling in the DOM is the process where when an event occurs on an element, it triggers not only on that element but also propagates upwards through its parent elements in the DOM hierarchy, essentially bubbling up until it reaches the root element of the document.
+                </p>
+            </div>
+            <!-- question 5 -->
+            <div class="bg-white rounded-md">
+                <h3
+                    class="font-semibold text-2xl text-[#00303C] border-b-2 border-gray-300 border-dashed p-6">Question-5:
+                    How do you create,add,remove elements using javascript?</h3>
+                <p class="text-gray-500 text-xl p-6">To create elements in JavaScript using the document.createElement(“HTML tag name”) method.
+                    Add class list,Add innerText or innerHTML using backtik(``).Then appendChild() in the parent container.
+                    <br>
+                    <br>
+                    To Add elements using  JavaScript with method appendChild(). 
+                    <br>
+                    <br>
+                    To remove using JavaScript with methods like removeChild() and remove().
+                    
+                </p>
+            </div>
 
         </main>
         <footer>
