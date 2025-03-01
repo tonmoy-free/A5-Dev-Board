@@ -43,7 +43,7 @@ for (let i = 0; i < completeButtons.length; i++) {
 
 
         paragraph.innerHTML = `
-        <p class="text-base p-6 bg-orange-300 rounded-md">
+        <p class="text-base p-6 bg-[#F4F7FF] rounded-md">
         You have Complete The Task ${fgh};
         </p>
         `
@@ -52,11 +52,5 @@ for (let i = 0; i < completeButtons.length; i++) {
 }
 
 
-const sectionToClear = document.getElementById('activity-log');
-const clearButton = document.getElementById('clear-btn');
 
-
-clearButton.addEventListener("click",function(){
-    sectionToClear.innerHTML = '';
-})
 
