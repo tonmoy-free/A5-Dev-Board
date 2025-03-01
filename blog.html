@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A5-Dev-Board</title>
+        <!-- google Poppins font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+            rel="stylesheet" type="text/css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script>
+                tailwind.config = {
+                  theme: {
+                    extend: {
+                      colors: {
+                        clifford: '#da373d',
+                        'bt-primary': '#179800',
+                        'service-bg': '#EFEBE3',
+                      }
+                    }
+                  }
+                }
+        </script>
+        <!-- font awesome cdn -->
+        <script src="https://kit.fontawesome.com/d7b7563d24.js"
+            crossorigin="anonymous"></script>
+        <style>
+            .poppins-font {
+                font-family: "Poppins", sans-serif;
+                      }
+        </style>
+    </head>
+    <body id="body" class="poppins-font bg-gray-500 p-6">
+        <header class="container mx-auto p-5 bg-white rounded-2xl">
+            <!-- <div class="flex justify-between items-center"></div> -->
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                <div class="flex justify-center  items-center ">
+                    <!-- img -->
+                    <div>
+                        <img class="w-10 h-10 " src="./assets/logo.png" alt>
+                    </div>
+                    <!-- logo tittle -->
+                    <div>
+                        <h1 class="pl-2 text-2xl">Dev<span
+                                class="font-bold">Board</span></h1>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="flex justify-around items-center">
+                        <button id="back-todesk-btn"
+                            class="cursor-pointer btn btn-primary rounded-lg text-xl pt-7 pb-7 pl-6 pr-6">
+                            Back to Desk
+                        </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="container min-h-screen mx-auto mt-5 " >
+           
+
+        </main>
+        <footer>
+
+        </footer>
+        <script src="./js/blog-return-index.js"></script>
+    </body>
+</html>
