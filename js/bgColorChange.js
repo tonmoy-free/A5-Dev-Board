@@ -27,14 +27,17 @@ for (let i = 0; i < completeButtons.length; i++) {
 
         event.target.classList.add('disabled');
         event.target.disabled = true;
-
-
-     
-
-           const hading = document.querySelectorAll('.hadding');
-           const fgh =  hading[0].innerText;
-
         
+
+         alert("Board Updated Successfully")
+         if(totalNumberInt === 29){
+            alert('Congrates!!!You have completed all the current task');
+         }
+
+        const hading = document.querySelectorAll('.hadding');
+        const fgh = hading[0].innerText;
+
+
 
         const container = document.getElementById("activity-log");
 
