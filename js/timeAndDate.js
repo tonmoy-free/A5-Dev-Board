@@ -4,6 +4,9 @@ const currentDate = new Date();
 const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
 const formattedDate = currentDate.toLocaleDateString('en-US', options);
 
+const timeOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+const formattedTime = currentDate.toLocaleTimeString('en-US', timeOptions);
+
 // Split the formatted date into two lines
 const dateParts = formattedDate.split(', ');
 const firstLine = dateParts[0] + ' ,';
@@ -17,4 +20,5 @@ currentDateDiv.innerHTML = `
             ${secondLine}
             </span>
             </p>
+            <p>Time: ${formattedTime}</p>
             `;

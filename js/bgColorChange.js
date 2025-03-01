@@ -34,9 +34,10 @@ for (let i = 0; i < completeButtons.length; i++) {
             alert('Congrates!!!You have completed all the current task');
          }
 
+    const cardTitle = this.parentElement.parentElement.parentElement.querySelector('div').children[1].innerText;
+
         const hading = document.querySelectorAll('.hadding');
         const fgh = hading[0].innerText;
-
 
 
         const container = document.getElementById("activity-log");
@@ -47,7 +48,7 @@ for (let i = 0; i < completeButtons.length; i++) {
 
         paragraph.innerHTML = `
         <p class="text-base p-6 bg-[#F4F7FF] rounded-md">
-        You have Complete The Task ${fgh};
+        You have Complete The Task ${cardTitle} at ${formattedTime} 
         </p>
         `
         container.appendChild(paragraph);
