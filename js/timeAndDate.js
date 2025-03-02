@@ -20,5 +20,4 @@ currentDateDiv.innerHTML = `
             ${secondLine}
             </span>
             </p>
-            <p>Time: ${formattedTime}</p>
             `;
