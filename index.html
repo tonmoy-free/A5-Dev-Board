@@ -78,12 +78,12 @@
             </div>
 
         </header>
-        <main class="container min-h-screen mx-auto flex mt-5 gap-5">
+        <main class="container min-h-screen mx-auto flex mt-5 gap-5 flex-col md:flex-row">
             <!-- left side section -->
-            <section class="w-9/12  bg-white rounded-2xl ">
+            <section class="md:w-9/12 w-full  bg-white rounded-2xl ">
                 <!-- title card -->
                 <div
-                    class="flex justify-around border-b-2 border-gray-300 border-dashed p-6">
+                    class="flex justify-around border-b-2 border-gray-300 border-dashed p-6 flex-col md:flex-row">
                     <!-- task assigned  -->
                     <div
                         class="flex gap-6 justify-center items-center bg-[#F4F7FF] rounded-2xl p-8">
@@ -103,13 +103,13 @@
                     </div>
                     <!-- task banner -->
                     <div id="task-banner-btn"
-                        class="flex justify-start items-center w-[480px] bg-gradient-to-r from-[rgba(55,82,253,1.00)] to-[rgba(100,150,253,1.00)] rounded-2xl cursor-pointer">
+                        class="flex md:justify-start justify-center items-center w-full md:w-[480px] bg-gradient-to-r from-[rgba(55,82,253,1.00)] to-[rgba(100,150,253,1.00)] rounded-2xl cursor-pointer p-1">
                         <div>
-                            <img class="pl-10" src="./assets/board.png" alt>
+                            <img class="md:pl-10 pl-5  md:block " src="./assets/board.png" alt>
                         </div>
                         <div>
                             <p
-                                class="text-2xl font-medium text-white pl-6">Discover
+                                class="md:text-2xl text-sm font-medium text-white md:pl-6 pl-4">Discover
                                 Something<br> New Today!</p>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <!-- task card -->
-                <div class="grid grid-cols-3 p-6 gap-8">
+                <div class="grid md:grid-cols-3 p-6 gap-8 grid-cols-1 ">
                     <!-- card 1 -->
                     <div class="bg-[#F4F7FF] p-6 rounded-2xl space-y-4">
                         <div
@@ -294,7 +294,7 @@
             </section>
 
             <!-- right side section -->
-            <section class="w-3/12  bg-white rounded-2xl">
+            <section class="md:w-3/12 w-full  bg-white rounded-2xl">
                 <div class="border-b-2 border-gray-300 border-dashed pb-4">
                     <div class="flex justify-center items-center pt-7 ">
                         <img src="./assets/activity.png" alt>
